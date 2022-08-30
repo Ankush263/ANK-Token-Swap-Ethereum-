@@ -30,7 +30,7 @@ contract TokenSwap is ERC20Interface {
         totalSupply = 100000000000 * (10 ** decimal);
         founder = msg.sender;
         balances[founder] = totalSupply;
-        tokenPrice = 0.000000533 ether;
+        tokenPrice = 0.001 ether;
     }
 
     function balanceOf(address tokenOwner) public view override returns(uint balance){
