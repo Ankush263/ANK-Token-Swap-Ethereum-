@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { TextField } from '@mui/material';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import artifacts from "../../artifacts/contracts/ANKToken.sol/TokenSwap.json";
 import { ethers } from "ethers";
@@ -14,19 +13,10 @@ function ANKToken() {
     btn: `bg-[#2172E5] text-white my-2 rounded-2xl py-4 px-8 text-xl font-semibold flex items-center justify-center cursor-pointer border border-[#2172E5] hover:border-[#234169]`
   }
 
-  // const ethereum = window.ethereum as MetaMaskInpageProvider;
   const deployedAddress = "0xDdf77bCB2Cf4DAc28FA505C4A48ba96D35A3E1F5";
   const [connected, isConnected] = useState(false)
   const [celoAmount, setCeloAmount] = useState(0)
   const [tokenAmount, setTokenAmount] = useState(0)
-
-
-
-  // if (typeof window !== 'undefined') {
-  //   const provider = new ethers.providers.Web3Provider(window.ethereum)
-  //   const signer = provider.getSigner()
-  //   const ABI = artifacts.abi
-  // }
 
 
   const connectWallet = async () => {
