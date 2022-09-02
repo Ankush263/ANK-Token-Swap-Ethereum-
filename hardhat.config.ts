@@ -4,6 +4,9 @@ require('dotenv').config()
 
 module.exports = {
   solidity: '0.8.0',
+  paths:{
+    artifacts: './client/artifacts'
+  },
   networks: {
     goerli: {
       url: `https://goerli.infura.io/v3/${process.env.API_KEY}`,
