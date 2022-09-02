@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-import artifacts from "../artifacts/contracts/ANKToken.sol/TokenSwap.json";
+import artifacts from "../utils/TokenSwap.json";
 import { ethers } from "ethers";
 
 
